@@ -22,7 +22,7 @@
 
 //-----------------------------------------------------------------------------
 
-#if (defined(__GNUC__) && defined(__linux__))
+#if (defined(__GNUC__) && defined(__linux__) || EMSCRIPTEN)
   typedef sighandler_t CoinSighandler_t;
 # define CoinSighandler_t_defined
 #endif
